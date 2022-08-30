@@ -1,0 +1,362 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {
+        "runtime_batch_identifier_name": "2021_10"
+      },
+      "data_asset_name": "my_runtime_asset_name",
+      "data_connector_name": "default_runtime_data_connector_name",
+      "datasource_name": "demo_datasource"
+    },
+    "batch_markers": {
+      "ge_load_time": "20220829T195626.352211Z",
+      "pandas_data_fingerprint": "f3bcd6c30d7789020ac3ccdf350bb1f0"
+    },
+    "batch_spec": {
+      "batch_data": "PandasDataFrame",
+      "data_asset_name": "my_runtime_asset_name"
+    },
+    "checkpoint_name": "demo_checkpoint",
+    "expectation_suite_name": "demo_profiler",
+    "great_expectations_version": "0.15.18",
+    "run_id": {
+      "run_name": "run_2021_10",
+      "run_time": "2022-08-29T15:56:26.350264+00:00"
+    },
+    "validation_time": "20220829T195626.541741Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"dir1\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/execution_engine/execution_engine.py\", line 393, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/expectations/metrics/map_metric_provider.py\", line 321, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"dir1\" in BatchData does not exist.\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/validator/validator.py\", line 1296, in resolve_validation_graph\n    self._resolve_metrics(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/validator/validator.py\", line 2217, in _resolve_metrics\n    return execution_engine.resolve_metrics(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/execution_engine/execution_engine.py\", line 397, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"dir1\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "e5098ba9cd0b31c9b0ddcbf4c0cbc875",
+          "column": "dir1",
+          "value_set": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"dir1\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/execution_engine/execution_engine.py\", line 393, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/expectations/metrics/map_metric_provider.py\", line 321, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"dir1\" in BatchData does not exist.\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/validator/validator.py\", line 1296, in resolve_validation_graph\n    self._resolve_metrics(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/validator/validator.py\", line 2217, in _resolve_metrics\n    return execution_engine.resolve_metrics(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/execution_engine/execution_engine.py\", line 397, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"dir1\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "e5098ba9cd0b31c9b0ddcbf4c0cbc875",
+          "column": "dir1"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"dir1\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/execution_engine/execution_engine.py\", line 393, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 34, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/expectations/metrics/column_aggregate_metric_provider.py\", line 75, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"dir1\" in BatchData does not exist.\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/validator/validator.py\", line 1296, in resolve_validation_graph\n    self._resolve_metrics(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/validator/validator.py\", line 2217, in _resolve_metrics\n    return execution_engine.resolve_metrics(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/execution_engine/execution_engine.py\", line 397, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"dir1\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "e5098ba9cd0b31c9b0ddcbf4c0cbc875",
+          "column": "dir1",
+          "max_value": 1.1860657929825462e-05,
+          "min_value": 1.1860657929825462e-05
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": "Error: The column \"dir1\" in BatchData does not exist.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/execution_engine/execution_engine.py\", line 393, in resolve_metrics\n    resolved_metrics[metric_to_resolve.id] = metric_fn(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/expectations/metrics/metric_provider.py\", line 55, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/expectations/metrics/map_metric_provider.py\", line 321, in inner_func\n    raise ge_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"dir1\" in BatchData does not exist.\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/validator/validator.py\", line 1296, in resolve_validation_graph\n    self._resolve_metrics(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/validator/validator.py\", line 2217, in _resolve_metrics\n    return execution_engine.resolve_metrics(\n  File \"/Users/yusali/anaconda3/envs/mlops/lib/python3.10/site-packages/great_expectations/execution_engine/execution_engine.py\", line 397, in resolve_metrics\n    raise ge_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"dir1\" in BatchData does not exist.\n",
+        "raised_exception": true
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "e5098ba9cd0b31c9b0ddcbf4c0cbc875",
+          "column": "dir1",
+          "max_value": 1.1860657929825462e-05,
+          "min_value": 1.1860657929825462e-05
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {},
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "e5098ba9cd0b31c9b0ddcbf4c0cbc875",
+          "column_list": [
+            "Invoice/Item Number",
+            "Store Number",
+            "Store Name",
+            "Address",
+            "City",
+            "Store Location",
+            "County Number",
+            "County",
+            "Category",
+            "Category Name",
+            "Vendor Number",
+            "Vendor Name",
+            "Item Number",
+            "Item Description",
+            "Pack",
+            "Bottle Volume (ml)",
+            "State Bottle Cost",
+            "State Bottle Retail",
+            "Bottles Sold",
+            "Sale (Dollars)",
+            "Volume Sold (Liters)",
+            "Volume Sold (Gallons)",
+            "dir0",
+            "dir1"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "mismatched": [
+            {
+              "Expected": "dir1",
+              "Expected Column Position": 23,
+              "Found": null
+            }
+          ]
+        },
+        "observed_value": [
+          "Invoice/Item Number",
+          "Store Number",
+          "Store Name",
+          "Address",
+          "City",
+          "Store Location",
+          "County Number",
+          "County",
+          "Category",
+          "Category Name",
+          "Vendor Number",
+          "Vendor Name",
+          "Item Number",
+          "Item Description",
+          "Pack",
+          "Bottle Volume (ml)",
+          "State Bottle Cost",
+          "State Bottle Retail",
+          "Bottles Sold",
+          "Sale (Dollars)",
+          "Volume Sold (Liters)",
+          "Volume Sold (Gallons)",
+          "dir0"
+        ]
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "batch_id": "e5098ba9cd0b31c9b0ddcbf4c0cbc875",
+          "max_value": 2613683,
+          "min_value": 2613683
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 209870
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "e5098ba9cd0b31c9b0ddcbf4c0cbc875",
+          "column": "dir0",
+          "value_set": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 209870,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [
+          {
+            "count": 20,
+            "value": 13
+          }
+        ],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13
+        ],
+        "unexpected_count": 127951,
+        "unexpected_percent": 60.96678896459713,
+        "unexpected_percent_nonmissing": 60.96678896459713,
+        "unexpected_percent_total": 60.96678896459713
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "e5098ba9cd0b31c9b0ddcbf4c0cbc875",
+          "column": "dir0"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 209870,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "e5098ba9cd0b31c9b0ddcbf4c0cbc875",
+          "column": "dir0",
+          "max_value": 4.591222424448565e-06,
+          "min_value": 4.591222424448565e-06
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.00012388621527612332
+      },
+      "success": false
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 9,
+    "success_percent": 11.11111111111111,
+    "successful_expectations": 1,
+    "unsuccessful_expectations": 8
+  },
+  "success": false
+}
