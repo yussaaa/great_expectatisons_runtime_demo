@@ -96,6 +96,9 @@ See suite_from_notebook.ipynb
 great_expectations checkpoint new getting_started_checkpoint
 ```
 
+### c) Notes: 
+The final data docs report is saved under ```great_expectations/uncommitted/data_docs```
+
 ## 6. References: 
 * [Offical document](https://docs.greatexpectations.io/docs/tutorials/getting_started/tutorial_overview)
 
