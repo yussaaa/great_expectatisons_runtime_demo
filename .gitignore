@@ -1,5 +1,2 @@
 # data/
-*.parquet
-_?
-?=?
-.DS_Store
+*.parquet/

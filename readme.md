@@ -9,6 +9,9 @@ pip install great_expectations
 great_expectations init
 ```
 
+* Note: If need to use the offline version of the package, please use the following command 
+``` pip install git+https://github.com/StatCan/great_expectations.git@feature/offline-data-docs ```
+
 ## 2. Connect to data
 
 ### a) Related terms: 
@@ -68,7 +71,17 @@ data_connectors:
 ```
 great_expectations suite new
 ```
+### b) Quickly explor expecttions in a notebook
+[How to quickly explore Expectations in a notebook](https://docs.greatexpectations.io/docs/guides/miscellaneous/how_to_quickly_explore_expectations_in_a_notebook#5-save-your-expectation-suite)
+See suite_from_notebook.ipynb 
 
+### c) Three ways to create a suite
+1. From domin knowwledge 
+2. Using sample batch of data to create a validator (interactive mode)
+   * Add expectations by calling specific expectation methods on the validator object. They all begin with .expect_
+   * After exploring, save the validator to a checkpoint
+3. Automatically with a profiler
+    * Profiler creates a starting point for quickly generating Expectations
 
 ## 4. Validate data
 
